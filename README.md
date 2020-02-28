@@ -24,6 +24,7 @@ Swtiched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [Vir
 | Wireless | Broadcom | BCM94360NG M.2 | built-in | QCA61x4A was replaced* |
 | Ethernet | Intel | I219-V | [IntelMausi.kext](https://github.com/acidanthera/IntelMausi) | |
 | Audio | Realtek | ALC1150 | [AppleALC.kext](https://github.com/acidanthera/AppleALC) | |
+| PSU | Corsair | SF600 Platinum | | |
 | Case | Dan | A4-SFX | | |
 | Monitor | Dell | U2718Q | | DP input |
 
