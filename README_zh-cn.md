@@ -69,7 +69,9 @@
 
 2.如果你的核心显卡不是HD 530，请参考[此教程](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Headless)修改型号。
 
-3.如果你的主板不是ASUS Z170i Pro Gaming，请参考[此教程](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553)创建你自己的USB补丁。
+3.如果你没有独立显卡（核显输出），参考[这里](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#properties)修改`/EFI/CLOVER/config.plist`.
+
+4.如果你的主板不是ASUS Z170i Pro Gaming，请参考[此教程](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553)创建你自己的USB补丁。
 
 ## 已知问题
 显卡风扇在启动画面时有概率满速几秒，进入桌面后正常。可能是讯景BIOS的bug。可选择其他的Polaris架构显卡。
