@@ -72,7 +72,8 @@ Enjoy your own Hackintosh!
 ## Comments
 1. `/EFI/CLOVER/ACPI/patched/SSDT-EC.aml` is necessary. Otherwise the system will freeze during boot process.
 2. If your iGPU is not HD 530, refer to [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Headless) to recongnize the model correctly.
-3. If your motherboard is not ASUS Z170i Pro Gaming, refer to [this guide](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553) to create your own USB patch.
+3. If you don't have a dGPU, i.e. output via iGPU, refer to [this guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#properties) to modify `/EFI/CLOVER/config.plist`.
+4. If your motherboard is not ASUS Z170i Pro Gaming, refer to [this guide](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553) to create your own USB patch.
 
 ## Known issue
 GPU fan spins at max RPM for several seconds during boot occasionally and runs normally in desktop. This might be a XFX BIOS bug. You may choose any other Polaris GPUs.
