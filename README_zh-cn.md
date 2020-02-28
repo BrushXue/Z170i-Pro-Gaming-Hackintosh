@@ -21,7 +21,8 @@
 | 无线 | 博通 | BCM94360NG M.2 | 免驱 | 替换QCA61x4A* |
 | 以太网 | 英特尔 | I219-V | [IntelMausi.kext](https://github.com/acidanthera/IntelMausi) | |
 | 声卡 | 瑞昱 | ALC1150 | [AppleALC.kext](https://github.com/acidanthera/AppleALC) | |
-| 机箱 | Dan | A4-SFX | |  |
+| 电源 | 海盗船 | SF600 白金版 | | |
+| 机箱 | Dan | A4-SFX | | |
 | 显示器 | 戴尔 | U2718Q | | DP接口 |
 
 *高通的QCA61x4A无解，请参见[此教程](https://www.tonymacx86.com/threads/bcm94352z-installed-on-asus-z170i-pro-gaming-wifi-and-bt.191274)替换原厂无线网卡。理论上BCM94352Z或BCM94360CS2加转接卡都可以免驱使用。
