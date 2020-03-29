@@ -1,16 +1,22 @@
 # ASUS Z170i Pro Gaming Hackintosh Tutorial
 [中文版本](README_zh-cn.md)
 
-This tutorial works perfectly on macOS Catalina (10.15.3). FCPX GPU rendering works smoothly. Supports sleep, Airdrop and Handoff. 
+This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering works smoothly. Supports sleep, Airdrop and Handoff. 
 
 ![image](Screenshot_en-us.png)
 
+## Update 2
+Updated to macOS Catalina 10.15.4.
+
+Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5107 and all kexts to the latest version.
+
+If you are updating from previous version and moved all kexts to `/Library/Extensions`, please move them back to `/EFI/CLOVER/kexts/Other` as kernel extensions are now [deprecated](https://developer.apple.com/support/kernel-extensions/) by Apple.
 ## Update 1
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5104 and all kexts to the latest version.
 
 Swtiched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [VirtualSMC](https://github.com/acidanthera/VirtualSMC).
 
-(Optional) Move all kexts to `/Library/Extensions`.
+~~(Optional) Move all kexts to `/Library/Extensions`.~~
 
 ## Hardware
 | Item | Brand | Model | Driver | Comment |
@@ -65,8 +71,6 @@ After the first boot, open Clover Configurator to mount both EFI partitions in S
 Copy everything from the EFI in flash drive to the EFI in SSD and reboot. Now you should be able to boot from SSD.
 
 Refer to [this guide](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306) to generate serial number. Save and reboot. Then you should be able to login iCloud.
-
-(Optional) If everything works normally, move all kexts to `/Library/Extensions` for better stability. Open Hackintool and follow [this guide](https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave-catalina.268964) to install all kexts into `/Library/Extensions`. Then delete all kexts in `/EFI/CLOVER/kexts/Other`. [LiluFriend](https://github.com/PMheart/LiluFriend) is not necessary in my setup.
 
 Enjoy your own Hackintosh!
 
