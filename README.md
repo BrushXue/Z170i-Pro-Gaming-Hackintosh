@@ -1,7 +1,7 @@
 # ASUS Z170i Pro Gaming Hackintosh Tutorial
 [中文版本](README_zh-cn.md)
 
-This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering works smoothly. Supports sleep, Airdrop and Handoff. 
+This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering works smoothly. HDR can be enabled. Supports sleep, Airdrop and Handoff. 
 
 ![image](Screenshot_en-us.png)
 
@@ -10,7 +10,7 @@ Updated to macOS Catalina 10.15.4.
 
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5107 and all kexts to the latest version.
 
-If you are updating from previous version and moved all kexts to `/Library/Extensions`, please move them back to `/EFI/CLOVER/kexts/Other` as kernel extensions are now [deprecated](https://developer.apple.com/support/kernel-extensions/) by Apple.
+If you are updating from previous version and moved all kexts to `/Library/Extensions`, please move them back to `/EFI/CLOVER/kexts/Other` as kernel extensions are [deprecated](https://developer.apple.com/support/kernel-extensions/) by Apple in February.
 ## Update 1
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5104 and all kexts to the latest version.
 
@@ -32,7 +32,7 @@ Swtiched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [Vir
 | Audio | Realtek | ALC1150 | [AppleALC.kext](https://github.com/acidanthera/AppleALC) | |
 | PSU | Corsair | SF600 Platinum | | |
 | Case | Dan | A4-SFX | | |
-| Monitor | Dell | U2718Q | | DP input |
+| Monitor | Dell | U2718Q | | |
 
 *QCA61x4A is not supported. Follow [this guide](https://www.tonymacx86.com/threads/bcm94352z-installed-on-asus-z170i-pro-gaming-wifi-and-bt.191274) the replace the onboard wireless card. Theoretically BCM94352Z or BCM94360CS2 with adapter can work as well.
 ## BIOS Setup
