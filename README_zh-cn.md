@@ -1,14 +1,21 @@
 # 华硕Z170i Pro Gaming黑苹果教程
 
-本教程可在macOS Catalina (10.15.3)上完美驱动。FCPX显卡渲染正常工作。支持睡眠，隔空投送和接力。
+本教程可在macOS Catalina (10.15.4)上完美驱动。FCPX显卡渲染正常工作。HDR可正常开启。支持睡眠，隔空投送和接力。
 ![image](Screenshot_zh-cn.png)
+
+## 更新2
+更新至macOS Catalina 10.15.4.
+
+更新[Clover](https://github.com/CloverHackyColor/CloverBootloader)版本至r5107，更新所有kext到当前最新版本。
+
+如果你是从之前的版本升级，并将所有kext移动至`/Library/Extensions`下，请将它们移回`/EFI/CLOVER/kexts/Other`。苹果自今年二月起[停止](https://developer.apple.com/support/kernel-extensions/)了第三方内核扩展的使用。
 
 ## 更新1
 更新[Clover](https://github.com/CloverHackyColor/CloverBootloader)版本至r5104，更新所有kext到当前最新版本。
 
 从[FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)切换到[VirtualSMC](https://github.com/acidanthera/VirtualSMC)。
 
-(可选)将所有kext移动到`/Library/Extensions`。
+~~(可选)将所有kext移动到`/Library/Extensions`。~~
 ## 硬件
 | 类别 | 品牌 | 型号 | 驱动 | 备注 |
 |-----|-----|-----|-----|-----|
@@ -23,7 +30,7 @@
 | 声卡 | 瑞昱 | ALC1150 | [AppleALC.kext](https://github.com/acidanthera/AppleALC) | |
 | 电源 | 海盗船 | SF600 白金版 | | |
 | 机箱 | Dan | A4-SFX | | |
-| 显示器 | 戴尔 | U2718Q | | DP接口 |
+| 显示器 | 戴尔 | U2718Q | | |
 
 *高通的QCA61x4A无解，请参见[此教程](https://www.tonymacx86.com/threads/bcm94352z-installed-on-asus-z170i-pro-gaming-wifi-and-bt.191274)替换原厂无线网卡。理论上BCM94352Z或BCM94360CS2加转接卡都可以免驱使用。
 ## BIOS设置
@@ -60,8 +67,6 @@
 第一次正式启动后，打开Clover Configurator，加载固态硬盘和U盘的EFI分区。将U盘EFI分区中的所有文件复制到固态硬盘EFI分区中并重启，就可以从SSD启动了。
 
 参考[此教程](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306)生成序列号。保存并重启。你应该可以正常登录iCloud。
-
-(可选)如果所有硬件工作正常，为了系统稳定性应将所有kext放入`/Library/Extensions`内。打开Hackintool并参考此[此教程](https://www.tonymacx86.com/threads/guide-installing-3rd-party-kexts-el-capitan-sierra-high-sierra-mojave-catalina.268964)将所有kext安装至`/Library/Extensions`。然后删除`/EFI/CLOVER/kexts/Other`内的所有文件。[LiluFriend](https://github.com/PMheart/LiluFriend)不是必须的。
 
 现在你拥有属于你自己的黑苹果了！
 
