@@ -54,7 +54,7 @@ Swtiched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [Vir
 ### Pre Installation
 Download the official macOS Catalina image, [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) and [Hackintool](https://github.com/headkaze/Hackintool).
 
-**DO NOT** use UniBeast to create the drive. It creates strange errors. And do not use MultiBeast for post installation jobs.
+**DO NOT** use UniBeast to create the drive. It may create strange errors. And do not use MultiBeast for post installation jobs.
 
 Follow [this guide](https://hackintosher.com/guides/how-to-make-a-macos-10-15-catalina-flash-drive-installer/) to create the boot drive. Copy my `/EFI` folder into the EFI partition of your boot drive. Also copy Clover Configurator and Hackintool into the main partition.
 
