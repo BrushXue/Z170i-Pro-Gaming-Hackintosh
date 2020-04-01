@@ -49,21 +49,21 @@
 
 *安装完毕后可重新开启快速启动。
 ## 安装
-#### 安装前
+### 安装前
 下载官方镜像，[Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)和[Hackintool](https://github.com/headkaze/Hackintool)。
 
 **不要**使用UniBeast创建启动盘，会产生奇怪的错误。也不要使用MultiBeast做安装后处理工作。
 
 参考[此教程](https://hackintosher.com/guides/how-to-make-a-macos-10-15-catalina-flash-drive-installer/)创建USB启动盘，将我的`/EFI`文件夹复制到U盘的EFI分区中。将Clover Configurator和Hackintool复制到主分区中。
 
-#### 安装过程
+### 安装过程
 开机按F8从U盘启动。移动到**Boot macOS Install from Install macOS Catalina**按空格选择-v(verbose)显示调试信息。如果USB 3.0报错，请更换至USB 2.0端口。
 
 安装Catalina前进入**Disk Utility**擦除固态硬盘。你可以选择APFS(推荐)或HFS+格式，并选择GUID分区表。
 
 系统会自动从U盘启动数次，不要拔掉U盘。在初始化界面不要连接互联网并登录iCloud，而应创建一个本地账户，并进入桌面。
 
-#### 安装后
+### 安装后
 第一次正式启动后，打开Clover Configurator，加载固态硬盘和U盘的EFI分区。将U盘EFI分区中的所有文件复制到固态硬盘EFI分区中并重启，就可以从SSD启动了。
 
 参考[此教程](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306)生成序列号。保存并重启。你应该可以正常登录iCloud。
