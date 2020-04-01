@@ -65,7 +65,7 @@ Before installation, first open **Disk Utility** to erase the drive. You can cho
 
 The system will auto reboot from USB for several times. In initialization page **DO NOT** connect to internet and login iCloud, Create a local account instead. Then you should be able to reach the desktop.
 
-#### Post Installation
+### Post Installation
 After the first boot, open Clover Configurator to mount both EFI partitions in SSD and flash drive.
 
 Copy everything from the EFI in flash drive to the EFI in SSD and reboot. Now you should be able to boot from SSD.
