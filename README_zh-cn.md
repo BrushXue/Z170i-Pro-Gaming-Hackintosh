@@ -1,4 +1,5 @@
 # 华硕Z170i Pro Gaming黑苹果教程
+即将更新到OpenCore，目前正在测试稳定性。
 
 本教程可在macOS Catalina (10.15.4)上完美驱动。FCPX显卡渲染正常工作。HDR可正常开启。支持睡眠，隔空投送和接力。
 ![image](Screenshot_zh-cn.png)
