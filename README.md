@@ -1,4 +1,6 @@
 # ASUS Z170i Pro Gaming Hackintosh Tutorial
+An OpenCore version is coming soon as I'm currently testing its stability.
+
 [中文版本](README_zh-cn.md)
 
 This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering works smoothly. HDR can be enabled. Supports sleep, Airdrop and Handoff. 
