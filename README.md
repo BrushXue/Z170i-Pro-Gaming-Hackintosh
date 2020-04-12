@@ -7,12 +7,21 @@ This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering wo
 
 ![image](Screenshot_en-us.png)
 
+## Update 3
+Update [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5108. Won't update to the latest version until the theme issue is fixed.
+
+Updated all kexts to the latest version.
+
+Switched to pure UEFI envirionment. Check your BIOS setup with the latest table.
+
+Fixed USB Power issue so you can charge your iPad.
+
 ## Update 2
 Updated to macOS Catalina 10.15.4.
 
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5107 and all kexts to the latest version.
 
-If you are updating from previous version and moved all kexts to `/Library/Extensions`, please move them back to `/EFI/CLOVER/kexts/Other` as kernel extensions are [deprecated](https://developer.apple.com/support/kernel-extensions/) by Apple in February.
+If you are updating from previous version and moved all kexts to `/Library/Extensions`, please move them back to `/EFI/CLOVER/kexts/Other` as kernel extensions are [deprecated](https://developer.apple.com/support/kernel-extensions/) by Apple since February.
 ## Update 1
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5104 and all kexts to the latest version.
 
@@ -34,24 +43,26 @@ Swtiched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [Vir
 | Audio | Realtek | ALC1150 | [AppleALC.kext](https://github.com/acidanthera/AppleALC) | |
 | PSU | Corsair | SF600 Platinum | | |
 | Case | Dan | A4-SFX | | |
-| Monitor | Dell | U2718Q | | |
+| Monitor | Dell | U2720Q | | |
 
 *QCA61x4A is not supported. Follow [this guide](https://www.tonymacx86.com/threads/bcm94352z-installed-on-asus-z170i-pro-gaming-wifi-and-bt.191274) the replace the onboard wireless card. Theoretically BCM94352Z or BCM94360CS2 with adapter can work as well.
 ## BIOS Setup
 | Name | Option |
 | --- | --- |
+| SW Guard Extensions (SGX) | Disabled |
 | CFG Lock | Disabled |
 | VT-d | Disabled |
+| Above 4G Decoding | Enabled |
 | Primary Display | PCIE |
 | iGPU-Multi-Monitor | Enabled |
 | DVMT Pre-Allocated | 128M |
 | IOAPIC 24-119 Entries | Disabled |
 | Network Stack | Disabled |
 | Legacy USB Support| Enabled |
-| Fast Boot* | Disabled |
+| Fast Boot | Disabled |
 | OS Type | Other OS |
+| Launch CSM | Disabled |
 
-*After installation, fast boot can be enabled again.
 ## Installation
 ### Pre Installation
 Download the official macOS Catalina image, [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) and [Hackintool](https://github.com/headkaze/Hackintool).
@@ -77,10 +88,9 @@ Refer to [this guide](https://hackintosher.com/forums/thread/generate-your-own-h
 Enjoy your own Hackintosh!
 
 ## Comments
-1. `/EFI/CLOVER/ACPI/patched/SSDT-EC.aml` is necessary. Otherwise the system will freeze during boot process.
-2. If your iGPU is not HD 530, refer to [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Headless) to recongnize the model correctly.
-3. If you don't have a dGPU, i.e. output via iGPU, refer to [this guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#properties) to modify `/EFI/CLOVER/config.plist`.
-4. If your motherboard is not ASUS Z170i Pro Gaming, refer to [this guide](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553) to create your own USB patch.
+1. If your iGPU is not HD 530, refer to [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Headless) to recongnize the model correctly.
+2. If you don't have a dGPU, i.e. output via iGPU, refer to [this guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#properties) to modify `/EFI/CLOVER/config.plist`.
+3. If your motherboard is not ASUS Z170i Pro Gaming, refer to [this guide](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553) to create your own USB patch.
 
 ## Known issue
 GPU fan spins at max RPM for several seconds during boot occasionally and runs normally in desktop. This might be a XFX BIOS bug. You may choose any other Polaris GPUs.
