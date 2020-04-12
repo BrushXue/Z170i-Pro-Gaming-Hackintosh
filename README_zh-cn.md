@@ -5,7 +5,16 @@
 ![image](Screenshot_zh-cn.png)
 
 ## 更新2
-更新至macOS Catalina 10.15.4.
+更新[Clover](https://github.com/CloverHackyColor/CloverBootloader)版本至r5108。在Clover修复主题显示错误之前不会再有更新。
+
+更新所有kext到当前最新版本。
+
+切换到纯UEFI环境。请根据对照表格设置BIOS。
+
+修复USB电源问题，现在可以给iPad充电了。
+
+## 更新2
+更新至macOS Catalina 10.15.4。
 
 更新[Clover](https://github.com/CloverHackyColor/CloverBootloader)版本至r5107，更新所有kext到当前最新版本。
 
@@ -31,24 +40,26 @@
 | 声卡 | 瑞昱 | ALC1150 | [AppleALC.kext](https://github.com/acidanthera/AppleALC) | |
 | 电源 | 海盗船 | SF600 白金版 | | |
 | 机箱 | Dan | A4-SFX | | |
-| 显示器 | 戴尔 | U2718Q | | |
+| 显示器 | 戴尔 | U2720Q | | |
 
 *高通的QCA61x4A无解，请参见[此教程](https://www.tonymacx86.com/threads/bcm94352z-installed-on-asus-z170i-pro-gaming-wifi-and-bt.191274)替换原厂无线网卡。理论上BCM94352Z或BCM94360CS2加转接卡都可以免驱使用。
 ## BIOS设置
 | 名称 | 选项 |
 | --- | --- |
+| SW Guard Extensions (SGX) | 关闭 |
 | CFG Lock | 关闭 |
 | VT-d | 关闭 |
+| 大于4G地址空间解码 | 开启 |
 | 首选显卡 | PCIE |
 | 初始化iGPU | 开启 |
 | DVMT Pre-Allocated | 128M |
 | IOAPIC 24-119 Entries | 关闭 |
 | 网络堆栈 | 关闭 |
 | Legacy USB 支持| 开启 |
-| 快速启动* | 关闭 |
+| 快速启动 | 关闭 |
 | 操作系统类型 | 其他操作系统 |
+| 开启CSM | 关闭 |
 
-*安装完毕后可重新开启快速启动。
 ## 安装
 ### 安装前
 下载官方镜像，[Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)和[Hackintool](https://github.com/headkaze/Hackintool)。
@@ -72,13 +83,11 @@
 现在你拥有属于你自己的黑苹果了！
 
 ## 备注
-1.`/EFI/CLOVER/ACPI/patched/SSDT-EC.aml`是必须的，否则会在启动界面卡死。
+1.如果你的核心显卡不是HD 530，请参考[此教程](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Headless)修改型号。
 
-2.如果你的核心显卡不是HD 530，请参考[此教程](https://www.tonymacx86.com/threads/an-idiots-guide-to-lilu-and-its-plug-ins.260063/#Headless)修改型号。
+2.如果你没有独立显卡（核显输出），参考[这里](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#properties)修改`/EFI/CLOVER/config.plist`.
 
-3.如果你没有独立显卡（核显输出），参考[这里](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/skylake#properties)修改`/EFI/CLOVER/config.plist`.
-
-4.如果你的主板不是ASUS Z170i Pro Gaming，请参考[此教程](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553)创建你自己的USB补丁。
+3.如果你的主板不是ASUS Z170i Pro Gaming，请参考[此教程](https://www.tonymacx86.com/threads/the-new-beginners-guide-to-usb-port-configuration.286553)创建你自己的USB补丁。
 
 ## 已知问题
 显卡风扇在启动画面时有概率满速几秒，进入桌面后正常。可能是讯景BIOS的bug。可选择其他的Polaris架构显卡。
