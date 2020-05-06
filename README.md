@@ -1,5 +1,5 @@
 # ASUS Z170i Pro Gaming Hackintosh Tutorial
-An OpenCore version is coming soon as I'm currently testing its stability.
+## An [OpenCore](https://github.com/BrushXue/Z170i-Pro-Gaming-OpenCore) version is availale.
 
 [中文版本](README_zh-cn.md)
 
