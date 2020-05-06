@@ -4,6 +4,13 @@
 本教程可在macOS Catalina (10.15.4)上完美驱动。FCPX显卡渲染正常工作。HDR可正常开启。支持睡眠，隔空投送和接力。
 ![image](Screenshot_zh-cn.png)
 
+## 更新4
+更新[Clover](https://github.com/CloverHackyColor/CloverBootloader)版本至r5116。
+
+更新所有kext到当前最新版本。
+
+使用[minimal-dark](https://github.com/ImmersiveX/clover-theme-minimal-dark)主题.
+
 ## 更新3
 更新[Clover](https://github.com/CloverHackyColor/CloverBootloader)版本至r5108。在Clover修复主题显示错误之前不会再有更新。
 
