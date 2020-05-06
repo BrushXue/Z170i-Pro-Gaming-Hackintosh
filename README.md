@@ -1,14 +1,20 @@
 # ASUS Z170i Pro Gaming Hackintosh Tutorial
-## An [OpenCore](https://github.com/BrushXue/Z170i-Pro-Gaming-OpenCore) version is availale.
-
+## An [OpenCore](https://github.com/BrushXue/Z170i-Pro-Gaming-OpenCore) version is also availale.
 [中文版本](README_zh-cn.md)
 
 This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering works smoothly. HDR can be enabled. Supports sleep, Airdrop and Handoff. 
 
 ![image](Screenshot_en-us.png)
 
+## Update 4
+Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5116.
+
+Updated all kexts to the latest version.
+
+Switched to [minimal-dark](https://github.com/ImmersiveX/clover-theme-minimal-dark) theme.
+
 ## Update 3
-Update [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5108. Won't update to the latest version until the theme issue is fixed.
+Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5108. Won't update to the latest version until the theme issue is fixed.
 
 Updated all kexts to the latest version.
 
