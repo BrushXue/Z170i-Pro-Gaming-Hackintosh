@@ -6,6 +6,8 @@ This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering wo
 
 ![image](Screenshot_en-us.png)
 
+I haven't tested Clover yet but for OpenCore it is safe to upgrade to 10.15.5 directly.
+
 ## Update 4
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5116.
 
