@@ -1,12 +1,17 @@
 # ASUS Z170i Pro Gaming Hackintosh Tutorial
-## I'm planning to deprecate this Clover version soon. Only [OpenCore](https://github.com/BrushXue/Z170i-Pro-Gaming-OpenCore) version will be updated in the future.
+## The Clover version is deprecated now. Only [OpenCore](https://github.com/BrushXue/Z170i-Pro-Gaming-OpenCore) version will be updated in the future.
 [中文版本](README_zh-cn.md)
 
-This tutorial works perfectly on macOS Catalina (10.15.4). FCPX GPU rendering works smoothly. HDR can be enabled. Supports sleep, Airdrop and Handoff. 
+This tutorial works perfectly on macOS Catalina (10.15.5). FCPX GPU rendering works smoothly. HDR can be enabled. Supports sleep, Airdrop and Handoff. 
 
 ![image](Screenshot_en-us.png)
 
-I haven't tested Clover yet but for OpenCore it is safe to upgrade to 10.15.5 directly.
+## Update 5 (Last Update)
+Updated to macOS Catalina 10.15.5.
+
+Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5119.
+
+Updated all kexts to the latest version.
 
 ## Update 4
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5116.
@@ -33,7 +38,7 @@ If you are updating from previous version and moved all kexts to `/Library/Exten
 ## Update 1
 Updated [Clover](https://github.com/CloverHackyColor/CloverBootloader) to r5104 and all kexts to the latest version.
 
-Swtiched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [VirtualSMC](https://github.com/acidanthera/VirtualSMC).
+Switched from [FakeSMC](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) to [VirtualSMC](https://github.com/acidanthera/VirtualSMC).
 
 ~~(Optional) Move all kexts to `/Library/Extensions`.~~
 
@@ -102,6 +107,3 @@ Enjoy your own Hackintosh!
 
 ## Known issue
 GPU fan spins at max RPM for several seconds during boot occasionally and runs normally in desktop. This might be a XFX BIOS bug. You may choose any other Polaris GPUs.
-
-## Final Result
-![image](Final.JPG)
