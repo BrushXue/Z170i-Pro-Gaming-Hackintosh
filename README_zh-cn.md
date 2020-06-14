@@ -2,7 +2,7 @@
 ## Clover版本未来将不再更新， 请移步至[OpenCore](https://github.com/BrushXue/Z170i-Pro-Gaming-OpenCore) 版本。
 
 本教程可在macOS Catalina (10.15.5)上完美驱动。FCPX显卡渲染正常工作。HDR可正常开启。支持睡眠，隔空投送和接力。
-![image](Screenshot_en-US.png)
+![image](Screenshot_en-us.png)
 
 ## 更新5(最后一次更新)
 更新至macOS Catalina 10.15.5。
